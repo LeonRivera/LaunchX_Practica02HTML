@@ -8,3 +8,42 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    background-color: gray;
+    height: 50rem;
+}
+nav{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 0 5rem;
+    height: 8rem;
+    background-color: antiquewhite;
+}
+nav>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li>input{
+    max-width: 20rem;
+    /* width: 100%; */
+}
+.logo{
+    width: 6rem;
+    height: 6rem;
+}
+
