@@ -1,36 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/styles.css">
-<title>Pago Formulario</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Pasteleria</title>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <main>
-        <h1>Formulario de cliente</h1>
-        <div>
-            <label for="">Nombre</label>
-            <input type="text">
+
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./img/Logo-MauroPastel.png" class="logo" alt="logo_mauropastel"></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="icon-container">
+                    <!-- <div class="icon-container"> -->
+                        <input type="text" placeholder="">
+                        <span class="iconify" data-icon="codicon:search"></span>
+                    <!-- </div> -->
+                </li>
+                <li><a href="/"><span class="iconify" data-icon="ant-design:user-outlined"></span></a></li>
+                <li><a href="/"><span class="iconify" data-icon="cil:cart"></span></a></li>
+                
+            </ul>
+        </nav>
+        <section>
+            <div>
+                <h1>Pastelerias en la esquina de la web</h1>
+            </div>
+            <div>
+                <button>COMPRA YA!</button>
+            </div>
+        </section>
+        
+    </header>
+
+
+    <main class="main-pago">
+        <div class="pago-container">
+            <div class="card-pago">
+                <div class="card-pago-data">
+                    <h2>Pastel de durazno</h2>
+                    <div>
+                        <label for="">Nombre</label>
+                        <input type="text" value="5525490959">
+                        <label for="">Telefono</label>
+                        <input type="tel" value="5525490959" name="" id="">
+                        <label for="">Correo</label>
+                        <input type="email" value="leonriv2@gmail.com">
+                    </div>
+                </div>
+                <div class="card-pago-desc">
+                    <div class="card-pago-img">
+
+                    </div>
+                    <div>
+                        <h3>Descripcion</h3>
+                        <p>Precio</p>
+                        <p>$666.99</p>
+                        <p for="">Sabores</p>
+
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="">Telefono</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Email</label>
-            <input type="text">
-        </div>
-        <div>
-            <h2>Descripcion</h2>
-            <p>Precio:</p>
-            <p>Sabores:</p>
-            <p>Adornos:</p>
-        </div>
-        <button>Pagar</button>
     </main>
+
+    <footer>
+        <p>Derechos reservados LeonRivera 2022</p>
+    </footer>
+
+
+
 </body>
+
 </html>
