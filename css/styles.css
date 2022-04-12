@@ -226,7 +226,11 @@ footer{
     align-items: center;
 }
 .pago-container{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+
     width: 90%;
     height: 50rem;
     border-radius: 15px;
@@ -244,10 +248,13 @@ footer{
     grid-template-columns: repeat(2, 1fr);
 }
 .card-pago-data{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: grid;
     grid-template-rows: 33% 67%;
 
+}
+.pago-data>div>input{
+    font-size: 1.3rem;
 }
 .pago-data{
     display: flex;
@@ -261,13 +268,21 @@ footer{
 h2{
     font-size: 3rem;
 }
-.card-pago-data>div:nth-child(1){
 
+.card-pago-data{
+    padding: 2rem
 }
 .card-pago-desc{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: grid;
     grid-template-rows: 33% 67%;
+    padding: 2rem
+}
+.card-pago-desc>div{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .card-pago-img{
     background-image: url("https://images.unsplash.com/photo-1605807646983-377bc5a76493?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0NzI3MTc0NA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080");
@@ -276,8 +291,11 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .pago-description{
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,6 +331,10 @@ h2{
 
 .button-pagar{
     width: 100%;
-    background-color: blue;
+    background-color:#3DB1F2;
     color: white;
+    font-size: 1.3rem;
+    padding: .6rem;
+    border: 0;
+    border-radius: 7px;
 }
