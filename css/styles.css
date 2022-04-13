@@ -338,3 +338,44 @@ h2{
     border: 0;
     border-radius: 7px;
 }
+
+.main-about{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.container-about-card{
+    /* background-color: #3DB1F2; */
+    max-width: 100%;
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+    box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+}
+.container-about-card>div{
+    display: flex;
+    align-items: center;
+}
+.container-about-card>div>.iconify{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.i-people{
+    color: #3DB1F2;
+}
+.i-house{
+color: #CCAD09;
+}
+.i-phone{
+    color: #41B808;
+}
+.i-clock{
+    color: #6607DF;
+}
