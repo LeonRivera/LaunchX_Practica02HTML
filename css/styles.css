@@ -94,14 +94,22 @@ a{
     }
 }
 @media (max-width: 750px) {
-    li>a{
-        display: none;
-    }
-    li>a>.iconify{
+    .ic-desktop{
         display: none;
     }
     nav>ul{
-        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-columns: 20% 70% 10% ;
+    }
+}
+@media (max-width: 580px) {
+    nav>ul{
+        grid-template-columns: 50% 50% ;
+    }
+    .icon-container{
+        display: none;
+    }
+    .menu-icon{
+        /* display: flex; */
     }
 }
 nav>ul>li:nth-child(6){
@@ -158,15 +166,20 @@ section>div:nth-child(2)>button{
     background-color: red;
     border: 0;
     color: white;
+    border-radius: 7px;
 }
-main{
+.main-cakes{
     width: 100%;
     padding: 5rem 5rem 0 5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-items: center;
-
+}
+@media (min-width: 850px) {
+    .main-cakes{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 .card-cake{
     max-width: 27rem;
@@ -233,6 +246,7 @@ main{
     color: white;
     border-radius: 5px;
     font-size: 1.3rem;
+    
 }
 
 footer{
@@ -248,6 +262,14 @@ footer{
 
 /********************PAGO*************************/
 .main-pago{
+
+    width: 100%;
+    padding: 5rem 5rem 0 5rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    /* align-items: center; */
+    /* justify-items: center; */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +281,7 @@ footer{
 -moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.75);
 
     width: 90%;
-    height: 50rem;
+    height: 60rem;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -270,9 +292,19 @@ footer{
 .card-pago{
     background-color: white;
     width: 60rem;
-    height: 70%;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 1050px) {
+    .card-pago{
+        height: 70%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pago-container{
+        height: 50rem;
+    }
 }
 .card-pago-data{
     /* background-color: antiquewhite; */
@@ -367,13 +399,26 @@ h2{
 }
 
 .main-about{
+
+    width: 100%;
+    padding: 5rem 5rem 0 5rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    align-items: center;
+    justify-items: center;
+
+
     width: 100%;
     
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
 }
-
+@media (min-width: 900px) {
+    .main-about{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .container-about-card{
     /* background-color: #3DB1F2; */
     max-width: 100%;
