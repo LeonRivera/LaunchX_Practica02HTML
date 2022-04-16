@@ -1,3 +1,7 @@
+:root{
+    --Principal-Red: #F23D3D;
+}
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -163,7 +167,7 @@ section>div:nth-child(2){
 section>div:nth-child(2)>button{
     width: 20rem;
     height: 4rem;
-    background-color: red;
+    background-color: var(--Principal-Red);
     border: 0;
     color: white;
     border-radius: 7px;
@@ -238,7 +242,7 @@ section>div:nth-child(2)>button{
     margin-left: 1rem;
 }
 .card-cake>div>button{
-    background-color: red;
+    background-color: var(--Principal-Red);
     border: 0;
     width: 100%;
     height: 2.3rem;
