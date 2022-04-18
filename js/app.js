@@ -10,4 +10,6 @@ btnMenuMobile.addEventListener('click', (e) => {
     console.log("click btn mobile");
 
     menuContainer.classList.remove("visibleDisplay");
+
+    console.log(window.innerWidth);
 });
