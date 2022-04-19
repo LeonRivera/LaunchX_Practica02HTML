@@ -13,3 +13,8 @@ btnMenuMobile.addEventListener('click', (e) => {
 
     console.log(window.innerWidth);
 });
+
+
+window.addEventListener('DOMContentLoaded', (e) => {
+    console.log("hola");
+});

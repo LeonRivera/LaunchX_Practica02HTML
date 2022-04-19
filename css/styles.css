@@ -44,6 +44,12 @@ nav{
     height: 8rem;
     /* background-color: antiquewhite; */
     font-size: 2.5rem;
+
+
+    /* background: rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 100; */
 }
 /* Podria acomodarlos con grid para darle mas tamaño al input */
 nav>ul{
@@ -180,6 +186,10 @@ section>div:nth-child(2)>button{
     border: 0;
     color: white;
     border-radius: 7px;
+}
+section>div:nth-child(2)>button:hover{
+    cursor: pointer;
+    background-color: #cc4444;
 }
 .main-cakes{
     width: 100%;
